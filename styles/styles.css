@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&family=Playwrite+GB+S+Guides:ital@0;1&display=swap");
+
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --COLOR: #fff;
+  --BG-COLOR: #000;
+}
+
+body {
+  /* font-family: "Roboto", Arial, sans-serif; */
+  font-family: "Playwrite GB S Guides", serif;
+  color: var(--COLOR);
+  background-color: var(--BG-COLOR);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--BG-COLOR);
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__cart {
+  position: relative;
+}
+
+.header__cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background-image: url("/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero__content {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  color: #000;
+}
+
+.hero__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--BG-COLOR);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero__button:hover {
+  background-color: #444;
+}
