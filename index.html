@@ -3,53 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sneaker Shop</title>
+  <title>Elegant</title>
   <link rel="stylesheet" href="/styles/styles.css">
+  <link rel = "icon" type = "image/svg" href = "/images/elegant_logo_small.svg">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo"><span>СК</span></div>
+    <div class="header__logo"><img class="logo-img" src="/images/elegant_logo.svg">Турецкая мужская одежда</div>
     <nav class="header__nav">
-      <a href="#" class="header__link">Главная</a>
+      <a href="#hero" class="header__link">Главная</a>
       <a href="#about" class="header__link">О нас</a>
-      <a href="#footer" class="header__link">Контакты</a>
+      <a href="#contact" class="header__link">Контакты</a>
     </nav>
   </header>
+
   <main>
-    <section id="hero">
-        <!-- <div class="hero__content ">
-            <h1 class="hero__title">Потрясающая коллекция для мужчин</h1>
-            <a href="#showcase" class="hero__button">Посмотреть коллекцию</a>
-        </div> -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Турецкая одежда, обувь, аксессуары, кожа.</h1>
+        <p class="hero__subtitle">Стиль на все случаи.</p>
+        <a href="https://www.instagram.com/elegant.neftekumsk/" class="hero__button" target="_blank"><img src="/images/InstagramLogo.svg">Discover More</a>
+      </div>
     </section>
-    <section id="about">
-        <div class="title-wrapper">
-            <h2 class="about__title">О нас</h2>
-        </div>
+
+    <section id="about" class="about">
+      <div class="about__container">
+        <h2 class="section__title">О нас</h2>
         <div class="about__content">
-            <div class="galery">
-                <img class="about__img" src="/images/fashion-shop.jpg">
-                <img class="about__img" src="/images/fasion-shop-outside.jpg">
-            </div>
-            <div class="description-block">
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus magnam doloremque perspiciatis eum repudiandae!</p>
-                <!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus magnam doloremque perspiciatis eum repudiandae!</p> -->
-            </div>
-            <h3>Местоположение</h3>
+          <div class="about__images">
+            <img src="images/fashion-shop.jpg" alt="Fashion shop interior" class="about__img">
+            <img src="images/fashion-shop-outside.jpg" alt="Fashion shop exterior" class="about__img">
+          </div>
+          <div class="about__description">
+            <p>Добро пожаловать в Elegant! Мы предлагаем тщательно подобранную коллекцию стильной и современной одежды на все случаи жизни. <br>Качество — наш главный приоритет.</p>
+          </div>
         </div>
+      </div>
     </section>
   </main>
-  <footer id="footer">
-        <address>
-            <h2 class="fotter__tittle">Адрес</h2>
-            ул. Арбат, 1а, Москва<br>
-            119019, Россия<br>
-            <a href="mailto:info@mysite.ru">info@mysite.ru</a><br>
-            Телефон: +7 (495) 000-00-00
-        </address>
-        <p>
-            Copyright &#169; 2024 Kamil Karatov. All Rights Reserved.
-        </p>
+
+  <footer id="contact" class="footer">
+    <div class="footer__content">
+      <h3>Всегда вам рады!</h3>
+      <address>
+        <p>С 9:00 до 17:00 без выходных</p>
+        <p>Нефтекумск. Ул Шоссейная 19, Автовокзальная территория.</p>
+        <p><a href="mailto:karatov8@gmail.com">karatov8@gmail.com</a></p>
+        <p>Телефон: 89624577999</p>
+      </address>
+    </div>
+    <p>&copy; 2024 Fasion Shop - Elegant. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
