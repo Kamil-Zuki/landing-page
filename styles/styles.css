@@ -40,8 +40,7 @@ body {
   background-color: white;
 }
 
-section,
-footer {
+section {
   height: 100vh;
   /* margin: 0 10rem; */
   box-sizing: border-box;
@@ -129,19 +128,24 @@ footer {
   background-color: #444;
 }
 
-/* SHOWCASE */
+/* ABOUT */
 #about {
+  height: 120vh;
   justify-content: center;
   align-items: start;
   background-color: white;
 }
 
 .about__title {
-  font-size: 4em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
 }
 
 .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.7),
@@ -150,12 +154,45 @@ footer {
     url("/images/stones.jpg");
   background-size: cover;
   background-position: center 10%;
-  height: 10rem;
+  height: 70px;
   width: 100%;
-  padding: 2rem;
 }
 
 .about__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.about__img {
+  height: auto;
+  width: 620px;
+}
+
+.description {
+  margin: 5rem auto;
+  display: block;
+  color: black;
+  font-size: 1.5rem;
+  width: 40%;
+  height: 50%;
+  /* border: 2px solid black; */
+}
+
+.description-block {
+  display: flex;
+  flex-direction: row;
 }
 
 /* FOOTER */
